@@ -1,0 +1,12 @@
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\bin\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.deps.json
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\bin\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.runtimeconfig.json
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\bin\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.runtimeconfig.dev.json
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\bin\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.dll
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\bin\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.pdb
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\obj\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.csprojResolveAssemblyReference.cache
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\obj\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.csproj.CoreCompileInputs.cache
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\obj\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.AssemblyInfoInputs.cache
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\obj\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.AssemblyInfo.cs
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\obj\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.dll
+D:\GitHub\c#.Bootstrap4dotnetcore2.0\Bootstrap4dotnetcore2\obj\Debug\netcoreapp2.0\Bootstrap4dotnetcore2.pdb
