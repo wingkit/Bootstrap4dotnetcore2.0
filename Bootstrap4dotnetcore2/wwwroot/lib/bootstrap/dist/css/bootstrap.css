@@ -6458,6 +6458,348 @@ button.close {
     bottom: 20px;
   }
 }
+html,
+body {
+  font-family: "Microsoft YaHei";
+}
+.btn {
+  padding: 8px 20px;
+  font-size: 16px;
+}
+.oms-btn-default {
+  color: #fff;
+  background-color: #6bcf5b;
+  border-color: #6bcf5b;
+}
+.oms-btn-default:focus,
+.oms-btn-default.focus {
+  color: #fff;
+  background-color: #4bbf38;
+  border-color: #338427;
+}
+.oms-btn-default:hover {
+  color: #fff;
+  background-color: #4bbf38;
+  border-color: #47b736;
+}
+.oms-btn-default:active,
+.oms-btn-default.active,
+.open > .dropdown-toggle.oms-btn-default {
+  color: #fff;
+  background-color: #4bbf38;
+  border-color: #47b736;
+}
+.oms-btn-default:active:hover,
+.oms-btn-default.active:hover,
+.open > .dropdown-toggle.oms-btn-default:hover,
+.oms-btn-default:active:focus,
+.oms-btn-default.active:focus,
+.open > .dropdown-toggle.oms-btn-default:focus,
+.oms-btn-default:active.focus,
+.oms-btn-default.active.focus,
+.open > .dropdown-toggle.oms-btn-default.focus {
+  color: #fff;
+  background-color: #40a330;
+  border-color: #338427;
+}
+.oms-btn-default:active,
+.oms-btn-default.active,
+.open > .dropdown-toggle.oms-btn-default {
+  background-image: none;
+}
+.oms-btn-default.disabled:hover,
+.oms-btn-default[disabled]:hover,
+fieldset[disabled] .oms-btn-default:hover,
+.oms-btn-default.disabled:focus,
+.oms-btn-default[disabled]:focus,
+fieldset[disabled] .oms-btn-default:focus,
+.oms-btn-default.disabled.focus,
+.oms-btn-default[disabled].focus,
+fieldset[disabled] .oms-btn-default.focus {
+  background-color: #6bcf5b;
+  border-color: #6bcf5b;
+}
+.oms-btn-default .badge {
+  color: #6bcf5b;
+  background-color: #fff;
+}
+.oms-btn-error {
+  color: #fff;
+  background-color: #f7522d;
+  border-color: #f7522d;
+}
+.oms-btn-error:focus,
+.oms-btn-error.focus {
+  color: #fff;
+  background-color: #e83209;
+  border-color: #9e2206;
+}
+.oms-btn-error:hover {
+  color: #fff;
+  background-color: #e83209;
+  border-color: #de3008;
+}
+.oms-btn-error:active,
+.oms-btn-error.active,
+.open > .dropdown-toggle.oms-btn-error {
+  color: #fff;
+  background-color: #e83209;
+  border-color: #de3008;
+}
+.oms-btn-error:active:hover,
+.oms-btn-error.active:hover,
+.open > .dropdown-toggle.oms-btn-error:hover,
+.oms-btn-error:active:focus,
+.oms-btn-error.active:focus,
+.open > .dropdown-toggle.oms-btn-error:focus,
+.oms-btn-error:active.focus,
+.oms-btn-error.active.focus,
+.open > .dropdown-toggle.oms-btn-error.focus {
+  color: #fff;
+  background-color: #c62a08;
+  border-color: #9e2206;
+}
+.oms-btn-error:active,
+.oms-btn-error.active,
+.open > .dropdown-toggle.oms-btn-error {
+  background-image: none;
+}
+.oms-btn-error.disabled:hover,
+.oms-btn-error[disabled]:hover,
+fieldset[disabled] .oms-btn-error:hover,
+.oms-btn-error.disabled:focus,
+.oms-btn-error[disabled]:focus,
+fieldset[disabled] .oms-btn-error:focus,
+.oms-btn-error.disabled.focus,
+.oms-btn-error[disabled].focus,
+fieldset[disabled] .oms-btn-error.focus {
+  background-color: #f7522d;
+  border-color: #f7522d;
+}
+.oms-btn-error .badge {
+  color: #f7522d;
+  background-color: #fff;
+}
+.oms-btn-notice {
+  color: #fff;
+  background-color: #fbd629;
+  border-color: #fbd629;
+}
+.oms-btn-notice:focus,
+.oms-btn-notice.focus {
+  color: #fff;
+  background-color: #edc404;
+  border-color: #a18603;
+}
+.oms-btn-notice:hover {
+  color: #fff;
+  background-color: #edc404;
+  border-color: #e3bb04;
+}
+.oms-btn-notice:active,
+.oms-btn-notice.active,
+.open > .dropdown-toggle.oms-btn-notice {
+  color: #fff;
+  background-color: #edc404;
+  border-color: #e3bb04;
+}
+.oms-btn-notice:active:hover,
+.oms-btn-notice.active:hover,
+.open > .dropdown-toggle.oms-btn-notice:hover,
+.oms-btn-notice:active:focus,
+.oms-btn-notice.active:focus,
+.open > .dropdown-toggle.oms-btn-notice:focus,
+.oms-btn-notice:active.focus,
+.oms-btn-notice.active.focus,
+.open > .dropdown-toggle.oms-btn-notice.focus {
+  color: #fff;
+  background-color: #caa704;
+  border-color: #a18603;
+}
+.oms-btn-notice:active,
+.oms-btn-notice.active,
+.open > .dropdown-toggle.oms-btn-notice {
+  background-image: none;
+}
+.oms-btn-notice.disabled:hover,
+.oms-btn-notice[disabled]:hover,
+fieldset[disabled] .oms-btn-notice:hover,
+.oms-btn-notice.disabled:focus,
+.oms-btn-notice[disabled]:focus,
+fieldset[disabled] .oms-btn-notice:focus,
+.oms-btn-notice.disabled.focus,
+.oms-btn-notice[disabled].focus,
+fieldset[disabled] .oms-btn-notice.focus {
+  background-color: #fbd629;
+  border-color: #fbd629;
+}
+.oms-btn-notice .badge {
+  color: #fbd629;
+  background-color: #fff;
+}
+.oms-btn-cancel {
+  color: #333;
+  background-color: #fff;
+  border-color: #999;
+}
+.oms-btn-cancel:focus,
+.oms-btn-cancel.focus {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #595959;
+}
+.oms-btn-cancel:hover {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #7a7a7a;
+}
+.oms-btn-cancel:active,
+.oms-btn-cancel.active,
+.open > .dropdown-toggle.oms-btn-cancel {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #7a7a7a;
+}
+.oms-btn-cancel:active:hover,
+.oms-btn-cancel.active:hover,
+.open > .dropdown-toggle.oms-btn-cancel:hover,
+.oms-btn-cancel:active:focus,
+.oms-btn-cancel.active:focus,
+.open > .dropdown-toggle.oms-btn-cancel:focus,
+.oms-btn-cancel:active.focus,
+.oms-btn-cancel.active.focus,
+.open > .dropdown-toggle.oms-btn-cancel.focus {
+  color: #333;
+  background-color: #d4d4d4;
+  border-color: #595959;
+}
+.oms-btn-cancel:active,
+.oms-btn-cancel.active,
+.open > .dropdown-toggle.oms-btn-cancel {
+  background-image: none;
+}
+.oms-btn-cancel.disabled:hover,
+.oms-btn-cancel[disabled]:hover,
+fieldset[disabled] .oms-btn-cancel:hover,
+.oms-btn-cancel.disabled:focus,
+.oms-btn-cancel[disabled]:focus,
+fieldset[disabled] .oms-btn-cancel:focus,
+.oms-btn-cancel.disabled.focus,
+.oms-btn-cancel[disabled].focus,
+fieldset[disabled] .oms-btn-cancel.focus {
+  background-color: #fff;
+  border-color: #999;
+}
+.oms-btn-cancel .badge {
+  color: #fff;
+  background-color: #333;
+}
+.oms-btn-link {
+  font-weight: normal;
+  color: #21a9ed;
+  border-radius: 0;
+}
+.oms-btn-link,
+.oms-btn-link:active,
+.oms-btn-link.active,
+.oms-btn-link[disabled],
+fieldset[disabled] .oms-btn-link {
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.oms-btn-link,
+.oms-btn-link:hover,
+.oms-btn-link:focus,
+.oms-btn-link:active {
+  border-color: transparent;
+}
+.oms-btn-link:hover,
+.oms-btn-link:focus {
+  color: #23527c;
+  text-decoration: underline;
+  background-color: transparent;
+}
+.oms-btn-link[disabled]:hover,
+fieldset[disabled] .oms-btn-link:hover,
+.oms-btn-link[disabled]:focus,
+fieldset[disabled] .oms-btn-link:focus {
+  color: #777;
+  text-decoration: none;
+}
+.modal-header {
+  padding-bottom: 5px;
+  border-bottom: 0;
+}
+.modal-title {
+  margin-top: 25px;
+  margin-left: 40px;
+  font-size: 16px;
+  color: #333;
+}
+.modal-title span.info {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+  vertical-align: bottom;
+  background: url(/images/product/ic_hint.png) no-repeat;
+}
+.modal-body {
+  padding: 0;
+  margin-left: 96px;
+  color: #999;
+}
+.modal-footer {
+  border-top: 0;
+}
+.modal-footer .btn + .btn {
+  margin-left: 15px;
+}
+/* 浮动提示窗 */
+.alert-float {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  width: 160px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -80px;
+  font-size: 16px;
+  background-color: #fff;
+  border: solid 1px #cdcdcd;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .09);
+          box-shadow: 0 2px 6px 0 rgba(0, 0, 0, .09);
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
+}
+.alert-float span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: 4px;
+  margin-right: 5px;
+  vertical-align: bottom;
+}
+.alert-float span.success {
+  background: url(/images/product/ic_win.png) no-repeat;
+}
+.alert-float span.fail {
+  background: url(/images/product/ic_-failure.png) no-repeat;
+}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,

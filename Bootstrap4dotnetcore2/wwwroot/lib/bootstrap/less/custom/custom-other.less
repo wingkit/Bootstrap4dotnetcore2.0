@@ -1,0 +1,139 @@
+// 文件中包含了那些无法定义成变量的自定义内容
+html,
+body {
+  font-family: "Microsoft YaHei";
+}
+
+//== button
+//
+
+.btn {
+  padding: 8px 20px;
+  font-size: 16px;
+}
+
+.oms-btn-default {
+  .button-variant(@oms-btn-default-color; @oms-btn-default-bg; @oms-btn-default-border);
+}
+
+.oms-btn-error {
+  .button-variant(@oms-btn-error-color; @oms-btn-error-bg; @oms-btn-error-border);
+}
+
+.oms-btn-notice {
+  .button-variant(@oms-btn-notice-color; @oms-btn-notice-bg; @oms-btn-notice-border);
+}
+
+.oms-btn-cancel {
+  .button-variant(@oms-btn-cancel-color; @oms-btn-cancel-bg; @oms-btn-cancel-border);
+}
+
+.oms-btn-link {
+  color: @oms-link;
+  font-weight: normal;
+  border-radius: 0;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    .box-shadow(none);
+  }
+
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+
+  &:hover,
+  &:focus {
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+    background-color: transparent;
+  }
+
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.modal-header {
+  border-bottom: 0;
+  padding-bottom: 5px;
+}
+
+.modal-title {
+  margin-top: 25px;
+  margin-left: 40px;
+  color: #333;
+  font-size: 16px;
+
+  span.info {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: url(/images/product/ic_hint.png) no-repeat;
+    margin-right: 20px;
+    vertical-align: bottom;
+  }
+}
+
+.modal-body {
+  margin-left: 96px;
+  padding: 0;
+  color: #999;
+}
+
+.modal-footer {
+  border-top: 0;
+
+  .btn + .btn {
+    margin-left: 15px;
+  }
+}
+
+/* 浮动提示窗 */
+.alert-float {
+  width: 160px;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.09);
+  border-radius: 4px;
+  border: solid 1px #cdcdcd;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  margin-top: -25px;
+  margin-left: -80px;
+  z-index: 1;
+  font-size: 16px;
+
+  span {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-top:4px;
+    margin-right: 5px;
+    vertical-align: bottom;
+  }
+
+  span.success {
+    background: url(/images/product/ic_win.png) no-repeat;
+  }
+
+  span.fail {
+    background: url(/images/product/ic_-failure.png) no-repeat;
+  }
+}
