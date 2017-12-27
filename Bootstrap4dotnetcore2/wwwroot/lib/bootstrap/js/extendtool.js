@@ -14,10 +14,10 @@
   var Tips = function (el) {
     $(el).on('click', dismiss, this.close)
   }
-  $('[data-toggle="tips"]').on('click', function () {
-    var target = $(this).attr('data-target');
-    $(target).fadeIn("slow").fadeOut(5000);
-  });
+  //$('[data-toggle="tips"]').on('click', function () {
+  //  var target = $(this).attr('data-target');
+  //  $(target).fadeIn("slow").fadeOut(5000);
+  //});
 
   function Plugin(option) {
     var $this = $(this)
@@ -27,7 +27,9 @@
     text += msg;
     $this.html(text);
     $this.stop();
-    $this.fadeIn("fast").fadeOut("normal");
+    $this.fadeIn("fast", function () {
+      $this.delay(1500).fadeOut("normal");
+    });
   }
 
   var old = $.fn.tips
