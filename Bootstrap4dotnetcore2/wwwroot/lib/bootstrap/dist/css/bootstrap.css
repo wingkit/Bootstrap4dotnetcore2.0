@@ -6458,6 +6458,16 @@ button.close {
     bottom: 20px;
   }
 }
+.make-gray {
+          filter: grayscale(100%);
+          filter: gray;
+
+  -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+       -o-filter: grayscale(100%);
+  -webkit-filter: gray;
+}
 html,
 body {
   font-family: "Microsoft YaHei";
@@ -6732,10 +6742,19 @@ fieldset[disabled] .oms-btn-link:focus {
   border-bottom: 0;
 }
 .modal-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   margin-top: 25px;
   margin-left: 40px;
   font-size: 16px;
   color: #333;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+          align-items: center;
 }
 .modal-title span.info {
   display: inline-block;
@@ -6757,7 +6776,7 @@ fieldset[disabled] .oms-btn-link:focus {
   margin-left: 15px;
 }
 /* 浮动提示窗 */
-.alert-float {
+.tips-float {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -6786,7 +6805,7 @@ fieldset[disabled] .oms-btn-link:focus {
   -ms-flex-pack: center;
           justify-content: center;
 }
-.alert-float span {
+.tips-float span {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -6794,11 +6813,58 @@ fieldset[disabled] .oms-btn-link:focus {
   margin-right: 5px;
   vertical-align: bottom;
 }
-.alert-float span.success {
+.tips-float span.success {
   background: url(/images/product/ic_win.png) no-repeat;
 }
-.alert-float span.fail {
+.tips-float span.fail {
   background: url(/images/product/ic_-failure.png) no-repeat;
+}
+.form-control {
+  height: 40px;
+}
+.form-group {
+  overflow: auto;
+}
+.link-record {
+  font-size: 16px;
+}
+.badge-danger {
+  color: #fff;
+  background-color: #f75234;
+  border-color: #f75234;
+}
+.oms-page > li {
+  display: inline-block;
+  margin-right: 5px;
+}
+.oms-page > li a {
+  padding: 4px 9px;
+  font-size: 12px;
+  color: #666;
+  border-radius: 4px;
+}
+.oms-page .active a,
+.oms-page .active a:hover,
+.oms-page .active a:focus {
+  background-color: #5bcf5b;
+  border-color: #5bcf5b;
+}
+.oms-page .input-group-btn {
+  float: left;
+}
+.oms-page .input-group-btn .btn {
+  padding: 4px 15px;
+  margin-left: 15px;
+  font-size: 12px;
+  color: #666;
+  border-color: #ddd;
+  border-radius: 4px;
+}
+.oms-page .input-group-btn .dropdown-menu {
+  min-width: 80px;
+  max-height: 200px;
+  margin-left: 15px;
+  overflow: auto;
 }
 .clearfix:before,
 .clearfix:after,

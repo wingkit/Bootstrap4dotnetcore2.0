@@ -7,18 +7,13 @@
 <div class="container">
     @* 按钮 *@
     <div class="row" style="margin-top:10px;">
-        <div class="col-md-8">
-            <h2>按钮</h2>
-            <button type="button" class="btn oms-btn-cancel">取消按钮</button>
-            <button type="button" class="btn oms-btn-default">默认按钮</button>
-            <button type="button" class="btn oms-btn-error">失败按钮</button>
-            <button type="button" class="btn oms-btn-notice">提示按钮</button>
-            <button type="button" class="btn oms-btn-link">链接按钮</button>
-        </div>
-        <div class="col-md-4">
-        </div>
+        <h3>按钮</h3>
+        <button type="button" class="btn oms-btn-cancel">取消按钮</button>
+        <button type="button" class="btn oms-btn-default">默认按钮</button>
+        <button type="button" class="btn oms-btn-error">失败按钮</button>
+        <button type="button" class="btn oms-btn-notice">提示按钮</button>
+        <button type="button" class="btn oms-btn-link">链接按钮</button>
     </div>
-
 
     @* 模态对话框 *@
     <div class="row">
@@ -63,23 +58,131 @@
             </div><!-- /.modal -->
         </div>
     </div>
-   
+
     @* 弹出提示 *@
     <div class="row">
-        <button class="btn oms-btn-default" data-target="#notice" data-toggle="alert">弹出提示</button>
-        <div id="notice" class="alert-float" role="alert" style="display:none;">
-            <span class="success"></span>创建成功！
+        <h3>弹出提示</h3>
+        <div id="notice" class="tips-float" role="alert" style="display:none;"> </div>
+        <button class="btn oms-btn-error" onclick="btnClick()">弹出提示</button>
+        <button class="btn oms-btn-default" onclick="btnClickSucc()">弹出提示</button>
+    </div>
+
+    @* 输入框 *@
+    <div class="row">
+        <h3>输入框</h3>
+        <div class="form-group">
+            <label for="inputPassword" class="col-md-2 control-label"> 聚焦 </label>
+            <div class="col-md-10">
+                <input class="form-control" type="text" placeholder="该输入框获得焦点...">
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-md-2 control-label"> 禁用 </label>
+            <div class="col-md-10">
+                <input class="form-control" id="disabledInput" type="text" placeholder="该输入框禁止输入..." disabled>
+            </div>
+        </div>
+        <div class="form-group has-success">
+            <label for="inputPassword" class="col-md-2 control-label"> 输入成功 </label>
+            <div class="col-md-10">
+                <input class="form-control" id="disabledInput" type="text" placeholder="输入成功...">
+            </div>
+        </div>
+        <div class="form-group has-warning">
+            <label for="inputPassword" class="col-md-2 control-label"> 输入提示 </label>
+            <div class="col-md-10">
+                <input class="form-control" id="disabledInput" type="text" placeholder="输入成功...">
+            </div>
+        </div>
+        <div class="form-group has-error">
+            <label for="inputPassword" class="col-md-2 control-label"> 输入错误 </label>
+            <div class="col-md-10">
+                <input class="form-control" id="disabledInput" type="text" placeholder="输入成功...">
+                <span @*asp-validation-for="" *@ class="text-danger">非法字符，请重新输入</span>
+            </div>
         </div>
     </div>
-</div>
 
+    @* 按钮输入框 *@
+    <div class="row">
+        <h3>按钮输入框</h3>
+        <div class="form-group">
+            <label for="inputPassword" class="col-md-2 control-label"> 搜索 </label>
+            <div class="col-md-10">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="输入查找内容...">
+                    <span class="input-group-btn">
+                        <button class="btn oms-btn-default" type="button">搜索</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputPassword" class="col-md-2 control-label"> 搜索 </label>
+            <div class="col-md-10">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="输入查找内容...">
+                    <span class="input-group-btn">
+                        <button class="btn oms-btn-cancel" type="button">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* 没有更多数据 *@
+    <div class="row">
+        <h3>没有更多数据</h3>
+        <div class="modal-title"><span class="info make-gray"></span>没有更多数据，<button type="button" class="btn oms-btn-link">创建资讯</button></div>
+    </div>
+
+    @* 徽章 *@
+    <div class="row">
+        <h3>操作记录（徽章）</h3>
+        <a class="link-record" href="#">操作记录 <span class="badge badge-danger">2</span></a>
+    </div>
+
+    @* 分页 *@
+    <div class="row">
+        <h3>分页</h3>
+        <nav>
+            <ul class="pagination oms-page">
+                <li><a href="#" aria-label="Previous"><span aria-hidden="true"><</span></a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li class="active"><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#" aria-label="Previous"><span aria-hidden="true">></span></a></li>
+                <li>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"> 5条/页 <span class="caret"></span> </button>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">第1页</a></li>
+                            <li><a href="#">第2页</a></li>
+                            <li><a href="#">第3页</a></li>
+                            <li><a href="#">第4页</a></li>
+                            <li><a href="#">第5页</a></li>
+                            <li><a href="#">第6页</a></li>
+                            <li><a href="#">第7页</a></li>
+                            <li><a href="#">第8页</a></li>
+                            <li><a href="#">第9页</a></li>
+                        </ul>
+                    </div><!-- /btn-group -->
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div> @* --> container *@
 @section Scripts {
     <script>
-        $(function () {
-            $('[data-toggle="alert"]').on('click', function () {
-                var target = $(this).attr('data-target');
-                $(target).fadeIn("slow").fadeOut(5000);
-            })
-        });
+        function btnClickSucc() {
+            $('#notice').tips({ msg: "创建成功", ret: true });
+        }
+        function btnClick() {
+            $('#notice').tips({ msg: "创建失败", ret: false });
+        }
     </script>
 }
