@@ -2,6 +2,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-Bootstrap4dotnetcore2-C0B923C4-5476-4891-8C00-50808FBC41D1</UserSecretsId>
+    <TypeScriptToolsVersion>2.5</TypeScriptToolsVersion>
   </PropertyGroup>
   <ItemGroup>
     <Compile Remove="wwwroot\images\NewFolder\**" />

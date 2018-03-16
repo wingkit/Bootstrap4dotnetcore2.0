@@ -1,0 +1,66 @@
+﻿@page
+@model Bootstrap4dotnetcore2.Pages.Effect.SVGToWaveModel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SVGToWave</title>
+    <link href="~/css/wave-svg.css" rel="stylesheet" />
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h3>绿色波浪</h3>
+        <div>
+            <div class="wave-svg-shape">
+                <svg class="wave-svg2" xmlns="http://www.w3.org/2000/svg" width="5120" viewBox="0 0 5120 107">
+                    <defs>
+                        <linearGradient id="white_green" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fff; stop-opacity:0.9" />
+                            <stop offset="100%" style="stop-color:#cdeccd; stop-opacity:0.5" />
+                        </linearGradient>
+                        <pattern id="water2" width="2560" height="107" patternUnits="userSpaceOnUse">
+                            <path fill="url(#white_green)" d="M0,65.62c54,0,200-38.67,372-38.67S531,78.47,865,78.47C1019,78.47,1153,0,1409,0c153.18,0,305.88,67.91,449,71.33,96.07,2.3,268.78-43.59,370-43.59,143,0,259,37.88,332,37.88V107H0Z" />
+                        </pattern>
+                    </defs>
+                    <title>资源 1</title>
+                    <rect fill="url(#water2)" x="0" y="0" width="5120" height="107"></rect>
+                </svg>
+            </div>
+
+            <div class="wave-svg-shape">
+                <svg class="wave-svg" xmlns="http://www.w3.org/2000/svg" width="5120" viewBox="0 0 5120 107">
+                    <defs>
+                        <pattern id="water" width="2560" height="107" patternUnits="userSpaceOnUse">
+                            <path fill="#fff" d="M0,65.62c54,0,200-38.67,372-38.67S531,78.47,865,78.47C1019,78.47,1153,0,1409,0c153.18,0,305.88,67.91,449,71.33,96.07,2.3,268.78-43.59,370-43.59,143,0,259,37.88,332,37.88V107H0Z" />
+                        </pattern>
+                    </defs>
+                    <title>资源 1</title>
+                    <rect fill="url(#water)" x="0" y="0" width="5120" height="107"></rect>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="bubble">
+        <h3>冒泡泡</h3>
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</body>
+</html>

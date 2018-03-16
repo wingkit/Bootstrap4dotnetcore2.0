@@ -8,5 +8,6 @@
     <WebStackScaffolding_IsPartialViewSelected>False</WebStackScaffolding_IsPartialViewSelected>
     <WebStackScaffolding_IsReferencingScriptLibrariesSelected>True</WebStackScaffolding_IsReferencingScriptLibrariesSelected>
     <ShowAllFiles>false</ShowAllFiles>
+    <ToolsVersionPromptShown>0.0</ToolsVersionPromptShown>
   </PropertyGroup>
 </Project>

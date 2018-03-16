@@ -67,7 +67,7 @@ namespace Bootstrap4dotnetcore2
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller}/{action=Index}/{id?}");
+                    template: "{controller}/{action=Example}/{id?}");
             });
         }
     }
